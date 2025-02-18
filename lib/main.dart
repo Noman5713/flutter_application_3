@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+
 void main() {
   runApp(App());
 }
- 
+
 class App extends StatelessWidget {
   const App({super.key});
   @override
@@ -22,30 +23,28 @@ class App extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Icon(
-              Icons.ac_unit,
+              Icons.star,
               size: 50,
-              color: Colors.blueGrey,
+              color: const Color.fromARGB(255, 15, 16, 17),
             ),
-            Text(
-              "Hi",
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
+              color: const Color.fromARGB(255, 37, 39, 41),
             ),
-            Text(
-              "This is",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
+              color: const Color.fromARGB(255, 43, 48, 51),
             ),
-            Text(
-              "Flutter",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
+              color: const Color.fromARGB(255, 35, 38, 39),
+            ),
+            Icon(
+              Icons.star_outline,
+              size: 50,
             ),
           ],
         ),
@@ -53,4 +52,3 @@ class App extends StatelessWidget {
     );
   }
 }
- 
