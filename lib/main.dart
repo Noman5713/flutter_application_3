@@ -9,46 +9,35 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Basic UI - 02",
+      title: "Flutter Basic UI - 02",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Basic UI - 02"),
+          title: Text("Flutter Basic UI - 02"),
           backgroundColor: Colors.blue,
           titleTextStyle: TextStyle(
             color: Colors.white,
             fontSize: 20,
           ),
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(255, 15, 16, 17),
+        body: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Container(
+              //height: 600,
+               width: 600,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: List.generate(
+                  100,
+                  (index) => Icon(
+                    Icons.star,
+                    color: const Color.fromARGB(255, 227, 19, 19),
+                    size: index.toDouble(),
+                  ),
+                ),
+              ),
             ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(255, 37, 39, 41),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(255, 43, 48, 51),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(255, 35, 38, 39),
-            ),
-            Icon(
-              Icons.star_outline,
-              size: 50,
-            ),
-          ],
-        ),
-      ),
-    );
+          ),
+        ));
   }
 }
