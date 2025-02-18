@@ -10,5 +10,7 @@ void main() {
 
 }
 
-class LabClass
+class LabClass05 extends StatelessWidget{
+  cons LabClass
+}
 
