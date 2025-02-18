@@ -9,21 +9,21 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter Basic UI - 02",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Basic UI - 02"),
-          backgroundColor: Colors.blue,
-          titleTextStyle: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
+        title: "Flutter Basic UI - 02",
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("Flutter Basic UI - 02"),
+            backgroundColor: Colors.blue,
+            titleTextStyle: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+            ),
           ),
-        ),
-        body: SingleChildScrollView(
+          body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Container(
               //height: 600,
-               width: 600,
+              width: 600,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,7 +31,7 @@ class App extends StatelessWidget {
                   100,
                   (index) => Icon(
                     Icons.star,
-                    color: const Color.fromARGB(255, 227, 19, 19),
+                    color: const Color.fromARGB(255, 13, 10, 10),
                     size: index.toDouble(),
                   ),
                 ),
